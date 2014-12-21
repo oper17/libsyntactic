@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Syntactic</title>
+</head>
+<body>
+&nbsp;
+<a href="http://developer.berlios.de" title="BerliOS Developer"> </a><br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp; <img alt="Syntactic Logo" src="synlogo.png"
+ style="width: 851px; height: 282px;"><br>
+<h1>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; <span
+ style="text-decoration: underline; font-weight: bold;">The C++ Neural
+Network Library Users Documentation</span></h1>
+<br>
+This documentation is for users prpose only. Developers too, are
+recommended to read this documentation first before the Developers
+Documentation.<br>
+<br>
+&nbsp;&nbsp;&nbsp; The following steps are to be follwed:<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; <span
+ style="font-weight: bold; text-decoration: underline;">Step 1: Create
+a network with 'n' number of layers</span><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; Use the: <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; constructor VVNetwork( int
+arg_layers, int neuro_layer_1, int neuro_layer_2, ... , int
+neuro_layer_n, double learning_rate, double momentum, int iter);<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Where :
+<ul>
+  <ul>
+    <ul>
+      <li>int arg_layers = Number of layers in the network.</li>
+      <li>int neuro_layer_1 = Number of neurons in first layer.</li>
+      <li>int neuro_layer_2 = Number of neurons in second layer.</li>
+      <li>...<br>
+      </li>
+      <li>upto ... int neuro_layer_n = Number of neurons in the nth
+layer(last layer).</li>
+      <li>double learning_rate = The learning rate of the network</li>
+      <li>double momentum = The momentum of the network.</li>
+      <li>int iter = The number of iterations to train for.&nbsp;
+(Note: setting iter to a value, will not cause training for that many
+iterations. The iterations must be done externally using a loop.)</li>
+    </ul>
+  </ul>
+</ul>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; For example
+for a 3 layer, 2 input network to simulate an xor gate:<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <span style="font-style: italic;">VVNetwork xorgate ( 3,
+2, 2, 1, 0.87, 0.2, 1000);</span><br>
+<br>
+<h4><a name="Step_2:_Set_the_transfer_functions"></a>&nbsp;&nbsp;&nbsp;
+<span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 2: Set the transfer functions</span></span></h4>
+<br>
+&nbsp;&nbsp;&nbsp; To do this we do:<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span
+ style="font-style: italic;">xorgate.vvtransfer_function =
+VV_SIGMOID_HALF;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+xorgate.vvtransfer_function_derivative = VV_SIGMOID_HALF_DERIV;</span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Here, we have selected the
+VV_SIGMOID_HALF &amp; VV_SIGMOID_HALF_DERIV for the transfer functions.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; The other available
+transfer functions are:<br>
+<br>
+<ul>
+  <ul>
+    <ul>
+      <li>VV_HARDLIMIT &amp; VV_HARDLIMIT_DERIV</li>
+      <li>VV_SIGMOID_FULL &amp; VV_SIGMOID_FULL_DERIV</li>
+      <li>VV_RAMP &amp; VV_RAMP_DERIV</li>
+      <li>VV_HYPERBOLIC &amp; VV_HYPERBOLIC_DERIV</li>
+    </ul>
+  </ul>
+</ul>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 3: Select the input data file and the
+actual desired output file</span></span><br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; We use:<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span
+ style="font-style: italic;">&nbsp;&nbsp;&nbsp; xorgate.VVreadinputfrom("xor.in");<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+xorgate.VVreadoutputfrom("xor.out");</span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Where xor.in
+contains: (In the case of 2 input xor)<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+0&nbsp;&nbsp; 0<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+0&nbsp;&nbsp; 1<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+1&nbsp;&nbsp; 0<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+1&nbsp;&nbsp; 1<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; And
+xor.out contains:(In the case of xor):<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 0<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 1<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 1<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 0<br>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 4: Set biasing if required</span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; To do that, use:<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <span style="font-style: italic;">xorgate.vvautobias()</span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; This automatically biases
+all non-input neurons with inital random weights.<br>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 5: Training the network</span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; To train, we simply use:<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span
+ style="font-style: italic;">for(int i=0; i&lt; 1000; i++)<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; xorgate.VVnetwork_train();</span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; This trains the network
+for 1000 iterations, note the number of iterations in the loop must
+match the number passed to the constructor as iterations.<br>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 6: Saving the network</span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; The network is saved into
+a file, so that it can be used later as per requirements by simply
+loading it.<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <span style="font-style: italic;">xorgate.VVsave_network("xor.nnw");</span><br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 7: Loading the network</span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; The network can be loaded any time
+later for use.<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span
+ style="font-style: italic;">VVNetwork xorgate2;</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+xorgate2.VVload_network("xor.nnw"); </span><br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Next we have to set the transfer
+functions. This is done as in <a
+ href="#Step_2:_Set_the_transfer_functions">step 2</a>.<span
+ style="font-weight: bold;"><span style="font-weight: bold;"><span
+ style="font-weight: bold;"><span style="font-weight: bold;"></span><br>
+</span></span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 8: Testing the network</span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; To test the network, we must specify the test file
+and a vector of doubles to hold the network's output.<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span
+ style="font-style: italic;">vector&lt;double&gt; out;</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; out=N2.VVtest_network("test");</span><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; For eg. <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; contents of test:<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp; 0 1<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; Now the out vector holds the output, in this
+case(xor), it holds just one output and it is usually around 0.91 -
+0.99 approx = 1 (for this example).<br>
+<br>
+&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;"><span
+ style="font-weight: bold;">Step 9: Processing the output</span></span><br>
+<br>
+&nbsp;&nbsp;&nbsp; Now the dealing with the entire network is complete.
+The output is stored in <span style="font-style: italic;">vector&lt;double&gt;
+out</span>. <br>
+&nbsp;&nbsp;&nbsp; In the above case of an xor, just printing the
+contents of out[0] will be enough, but for more complicated networks
+used for purposes such as<br>
+&nbsp;&nbsp;&nbsp; pattern recognition etc, some post processing must
+be done to ensure comprehensible output for normal users.<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span
+ style="font-weight: bold;">For any queries contact oper17 dot inc at
+gmail dot com.</span><br clear="all">
+<br clear="all">
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+<span style="font-style: italic;"><span style="font-style: italic;"></span></span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+</body>
+</html>

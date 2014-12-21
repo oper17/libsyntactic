@@ -1,0 +1,7 @@
+InputFile: ved.out
+OutputFile: output.txt
+TestFile: ved.out
+NetworkFile: TS.nnw
+Iterations: 600
+LearningRate: 0.8
+

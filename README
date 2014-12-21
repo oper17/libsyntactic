@@ -1,0 +1,14 @@
+Welcome to libsyntactic, a simple library which enables you to create a general neural network
+based program. 
+
+
+To compile, run: ./configure followed by make.
+
+To Install run make install as root.
+
+To compile the test program (xor gate simulated using neural networks), run sh maketest.sh .
+The test file is in the test directory.
+
+
+Please let us have your feedback at: oper17.inc@gmail.com
+

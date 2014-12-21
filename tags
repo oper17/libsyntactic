@@ -1,0 +1,334 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/rush\/Programming\/syntactic\/missing --run aclocal-1.9$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMDEP_FALSE	Makefile	/^AMDEP_FALSE = #$/;"	m
+AMDEP_TRUE	Makefile	/^AMDEP_TRUE = $/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/rush\/Programming\/syntactic\/missing --run tar$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/rush\/Programming\/syntactic\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/rush\/Programming\/syntactic\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/rush\/Programming\/syntactic\/missing --run automake-1.9$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CDPATH	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXCOMPILE	Makefile	/^CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \\$/;"	m
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXLD	Makefile	/^CXXLD = $(CXX)$/;"	m
+CXXLINK	Makefile	/^CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \\$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(srcdir) -I.$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DESTDIR	Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" \\$/;"	m
+DESTDIR	Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" install \\$/;"	m
+DESTDIR	Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" uninstall \\$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = README $(am__configure_deps) $(srcdir)\/Makefile.am \\$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libsyntactic_la_SOURCES)$/;"	m
+ECHO	Makefile	/^ECHO = echo$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+F77	Makefile	/^F77 = f95$/;"	m
+FFLAGS	Makefile	/^FFLAGS = -g -O2$/;"	m
+GZIP	Makefile	/^	  GZIP=$(GZIP_ENV) gunzip -c $(distdir).shar.gz | unshar ;;\\$/;"	m
+GZIP	Makefile	/^	  GZIP=$(GZIP_ENV) gunzip -c $(distdir).tar.gz | $(am__untar) ;;\\$/;"	m
+GZIP	Makefile	/^	shar $(distdir) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).shar.gz$/;"	m
+GZIP	Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m
+HAVE_ATEXIT	config.h	5;"	d
+HAVE_DLFCN_H	config.h	8;"	d
+HAVE_INTTYPES_H	config.h	11;"	d
+HAVE_LIBGSLCBLAS	config.h	17;"	d
+HAVE_MEMORY_H	config.h	20;"	d
+HAVE_SQRT	config.h	23;"	d
+HAVE_STDBOOL_H	config.h	26;"	d
+HAVE_STDINT_H	config.h	29;"	d
+HAVE_STDLIB_H	config.h	32;"	d
+HAVE_STRINGS_H	config.h	35;"	d
+HAVE_STRING_H	config.h	38;"	d
+HAVE_SYS_STAT_H	config.h	41;"	d
+HAVE_SYS_TYPES_H	config.h	44;"	d
+HAVE_UNISTD_H	config.h	47;"	d
+HAVE__BOOL	config.h	50;"	d
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM_ENV	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_FLAG	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lgslcblas $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINK	Makefile	/^LINK = $(LIBTOOL) --tag=CC --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \\$/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC --mode=compile $(CC) $(DEFS) \\$/;"	m
+LTCXXCOMPILE	Makefile	/^LTCXXCOMPILE = $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) \\$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/rush\/Programming\/syntactic\/missing --run makeinfo$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = syntactic$/;"	m
+PACKAGE	config.h	53;"	d
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = BUG-REPORT-ADDRESS$/;"	m
+PACKAGE_BUGREPORT	config.h	56;"	d
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = Syntactic$/;"	m
+PACKAGE_NAME	config.h	59;"	d
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = Syntactic 0.1.2$/;"	m
+PACKAGE_STRING	config.h	62;"	d
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = syntactic$/;"	m
+PACKAGE_TARNAME	config.h	65;"	d
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 0.1.2$/;"	m
+PACKAGE_VERSION	config.h	68;"	d
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libsyntactic_la_SOURCES)$/;"	m
+STDC_HEADERS	config.h	71;"	d
+STRIP	Makefile	/^STRIP = strip$/;"	m
+STRIPPROG	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+T	randoom.h	/^  const gsl_rng_type * T;$/;"	m	class:randoom
+VERSION	Makefile	/^VERSION = 0.1.2$/;"	m
+VERSION	config.h	74;"	d
+VVLayer	syntactic.h	/^class VVLayer $/;"	c
+VVNetwork	syntactic.cc	/^VVNetwork :: VVNetwork(int a,...)$/;"	f	class:VVNetwork
+VVNetwork	syntactic.h	/^		VVNetwork(){}$/;"	f	class:VVNetwork
+VVNetwork	syntactic.h	/^class VVNetwork$/;"	c
+VVNeuron	syntactic.h	/^	VVNeuron()$/;"	f	class:VVNeuron
+VVNeuron	syntactic.h	/^class VVNeuron$/;"	c
+VVTSNetwork	syntactic.h	/^class VVTSNetwork : public VVNetwork$/;"	c
+VV_HARDLIMIT	transfer_functions.h	3;"	d
+VV_HARDLIMIT_DERIV	transfer_functions.h	4;"	d
+VV_HYPERBOLIC	transfer_functions.h	11;"	d
+VV_HYPERBOLIC_DERIV	transfer_functions.h	12;"	d
+VV_RAMP	transfer_functions.h	9;"	d
+VV_RAMP_DERIV	transfer_functions.h	10;"	d
+VV_SIGMOID_FULL	transfer_functions.h	7;"	d
+VV_SIGMOID_FULL_DERIV	transfer_functions.h	8;"	d
+VV_SIGMOID_HALF	transfer_functions.h	5;"	d
+VV_SIGMOID_HALF_DERIV	transfer_functions.h	6;"	d
+VVload_network	syntactic.cc	/^int VVNetwork :: VVload_network(char fn[])$/;"	f	class:VVNetwork
+VVnetwork_train	syntactic.cc	/^void VVNetwork :: VVnetwork_train()$/;"	f	class:VVNetwork
+VVreadinputfrom	syntactic.cc	/^void VVNetwork :: VVreadinputfrom(char * fn)$/;"	f	class:VVNetwork
+VVreadoutputfrom	syntactic.cc	/^void VVNetwork :: VVreadoutputfrom(char*fn,int times)$/;"	f	class:VVNetwork
+VVsave_network	syntactic.cc	/^void VVNetwork :: VVsave_network(char fn[])$/;"	f	class:VVNetwork
+VVtest_network	syntactic.cc	/^void VVNetwork :: VVtest_network(char fn[])$/;"	f	class:VVNetwork
+ac_ct_AR	Makefile	/^ac_ct_AR = ar$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_F77	Makefile	/^ac_ct_F77 = f95$/;"	m
+ac_ct_RANLIB	Makefile	/^ac_ct_RANLIB = ranlib$/;"	m
+ac_ct_STRIP	Makefile	/^ac_ct_STRIP = strip$/;"	m
+accumulate	syntactic.h	/^	double accumulate,vvbias_weight;$/;"	m	class:VVNeuron
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__fastdepCC_FALSE	Makefile	/^am__fastdepCC_FALSE = #$/;"	m
+am__fastdepCC_TRUE	Makefile	/^am__fastdepCC_TRUE = $/;"	m
+am__fastdepCXX_FALSE	Makefile	/^am__fastdepCXX_FALSE = #$/;"	m
+am__fastdepCXX_TRUE	Makefile	/^am__fastdepCXX_TRUE = $/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m
+am__strip_dir	Makefile	/^am__strip_dir = `echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_libsyntactic_la_OBJECTS	Makefile	/^am_libsyntactic_la_OBJECTS = syntactic.lo transfer_functions.lo$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build	Makefile	/^build = x86_64-redhat-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-redhat-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = redhat$/;"	m
+cblas_ccopy	configure	/^cblas_ccopy ();$/;"	f
+datadir	Makefile	/^datadir = ${prefix}\/share$/;"	m
+dc_destdir	Makefile	/^	  && dc_destdir="$${TMPDIR-\/tmp}\/am-dc-$$$$\/" \\$/;"	m
+dc_install_base	Makefile	/^	dc_install_base=`$(am__cd) $(distdir)\/_inst && pwd | sed -e 's,^[^:\\\\\/]:[\\\\\/],\/,'` \\$/;"	m
+deli	syntactic.h	/^		double **deli;$/;"	m	class:VVNetwork
+deli	syntactic.h	/^		double **deli;$/;"	m	class:VVTSNetwork
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depmode	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+depmode	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+dir	Makefile	/^	    dir="\/$$dir"; \\$/;"	m
+dir	Makefile	/^	    dir=''; \\$/;"	m
+dir	Makefile	/^	  dir="`echo $$p | sed -e 's|\/[^\/]*$$||'`"; \\$/;"	m
+dir	Makefile	/^	  dir=`echo "$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
+dir	Makefile	/^	  test "$$dir" != "$$p" || dir=.; \\$/;"	m
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
+distuninstallcheck_dir	Makefile	/^	            distuninstallcheck_dir="$$dc_destdir" distuninstallcheck; \\$/;"	m
+distuninstallcheck_dir	Makefile	/^	  && $(MAKE) $(AM_MAKEFLAGS) distuninstallcheck_dir="$$dc_install_base" \\$/;"	m
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
+dld_link	configure	/^dld_link ();$/;"	f
+dlopen	configure	/^dlopen ();$/;"	f
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+f	Makefile	/^	    f=$(am__strip_dir) \\$/;"	m
+f	Makefile	/^    $(srcdir)\/*) f=`echo "$$p" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
+f	Makefile	/^    *) f=$$p;; \\$/;"	m
+file	Makefile	/^	    $(srcdir)\/*) file=`echo "$$file" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
+file	Makefile	/^	    $(top_srcdir)\/*) file=`echo "$$file" | sed "s|^$$topsrcdirstrip\/|$(top_builddir)\/|"`;; \\$/;"	m
+func_extract_an_archive	libtool	/^func_extract_an_archive ()$/;"	f
+func_extract_an_archive	ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	libtool	/^func_extract_archives ()$/;"	f
+func_extract_archives	ltmain.sh	/^func_extract_archives ()$/;"	f
+func_infer_tag	libtool	/^func_infer_tag ()$/;"	f
+func_infer_tag	ltmain.sh	/^func_infer_tag ()$/;"	f
+func_win32_libid	libtool	/^func_win32_libid ()$/;"	f
+func_win32_libid	ltmain.sh	/^func_win32_libid ()$/;"	f
+generate	randoom.h	/^double generate()$/;"	f	class:randoom
+global_error	syntactic.h	/^		double global_error;$/;"	m	class:VVNetwork
+gsl_blas_ccopy	configure	/^gsl_blas_ccopy ();$/;"	f
+here	Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
+here	Makefile	/^	here=`pwd`; \\$/;"	m
+host	Makefile	/^host = x86_64-redhat-linux-gnu$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = x86_64-redhat-linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = redhat$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${prefix}\/info$/;"	m
+inputs	syntactic.h	/^		double *inputs,*outputs;$/;"	m	class:VVNetwork
+inputs	syntactic.h	/^		double *inputs,*outputs;$/;"	m	class:VVTSNetwork
+install_sh	Makefile	/^install_sh = \/home\/rush\/Programming\/syntactic\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+layers	syntactic.h	/^		VVLayer * layers;$/;"	m	class:VVNetwork
+layers	syntactic.h	/^		VVLayer * layers;$/;"	m	class:VVTSNetwork
+learning_rate	syntactic.h	/^		double learning_rate,momentum;$/;"	m	class:VVNetwork
+learning_rate	syntactic.h	/^		double learning_rate,momentum;$/;"	m	class:VVTSNetwork
+libLTLIBRARIES_INSTALL	Makefile	/^libLTLIBRARIES_INSTALL = $(INSTALL)$/;"	m
+lib_LTLIBRARIES	Makefile	/^lib_LTLIBRARIES = libsyntactic.la$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libsyntactic_la_LIBADD	Makefile	/^libsyntactic_la_LIBADD =$/;"	m
+libsyntactic_la_OBJECTS	Makefile	/^libsyntactic_la_OBJECTS = $(am_libsyntactic_la_OBJECTS)$/;"	m
+libsyntactic_la_SOURCES	Makefile	/^libsyntactic_la_SOURCES = syntactic.h transfer_functions.h syntactic.cc transfer_functions.cc$/;"	m
+list	Makefile	/^	  list='$(DIST_ARCHIVES)'; for i in $$list; do echo $$i; done) | \\$/;"	m
+list	Makefile	/^	@set -x; list='$(lib_LTLIBRARIES)'; for p in $$list; do \\$/;"	m
+list	Makefile	/^	list='$(DISTFILES)'; for file in $$list; do \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS) config.h.in $(LISP) $(TAGS_FILES)'; \\$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	config.guess	/^		main()$/;"	f
+main	config.guess	/^	main ()$/;"	f
+main	config.guess	/^main ()$/;"	f
+main	file_write.cc	/^int main(int argc,char**argv)$/;"	f
+main	main.cc	/^int main()$/;"	f
+main	randoom.cc	/^int main()$/;"	f
+mandir	Makefile	/^mandir = ${prefix}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = mkdir -p --$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+momentum	syntactic.h	/^		double learning_rate,momentum;$/;"	m	class:VVNetwork
+momentum	syntactic.h	/^		double learning_rate,momentum;$/;"	m	class:VVTSNetwork
+no_of_layers	syntactic.h	/^		long int no_of_layers;$/;"	m	class:VVNetwork
+no_of_layers	syntactic.h	/^		long int no_of_layers;$/;"	m	class:VVTSNetwork
+no_training_records	syntactic.h	/^		int no_training_records;$/;"	m	class:VVNetwork
+no_training_records	syntactic.h	/^		int no_training_records;$/;"	m	class:VVTSNetwork
+nonperlay	syntactic.h	/^		vector <int> nonperlay;$/;"	m	class:VVNetwork
+nonperlay	syntactic.h	/^		vector <int> nonperlay;$/;"	m	class:VVTSNetwork
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+outputs	syntactic.h	/^		double *inputs,*outputs;$/;"	m	class:VVNetwork
+outputs	syntactic.h	/^		double *inputs,*outputs;$/;"	m	class:VVTSNetwork
+p	Makefile	/^	  p=$(am__strip_dir) \\$/;"	m
+perceptrons	syntactic.h	/^		VVNeuron * perceptrons;$/;"	m	class:VVLayer
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/syntactic$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/syntactic$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/syntactic$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+r	randoom.h	/^  gsl_rng * r;$/;"	m	class:randoom
+randoom	randoom.h	/^class randoom$/;"	c
+randoom	randoom.h	/^randoom(int type,unsigned long seed)$/;"	f	class:randoom
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+shl_load	configure	/^shl_load ();$/;"	f
+show_weights	syntactic.cc	/^void VVNetwork :: show_weights()$/;"	f	class:VVNetwork
+srcdir	Makefile	/^srcdir = .$/;"	m
+srcdirstrip	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+subdir	Makefile	/^subdir = .$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tags	Makefile	/^	tags=; \\$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | bzip2 -9 -c >$(distdir).tar.bz2$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_builddir	Makefile	/^top_builddir = .$/;"	m
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m
+topsrcdirstrip	Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \\$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unique	Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
+unique	Makefile	/^	unique=`for i in $$list; do \\$/;"	m
+vvautobias	syntactic.cc	/^void VVNetwork :: vvautobias()$/;"	f	class:VVNetwork
+vvbias_weight	syntactic.h	/^	double accumulate,vvbias_weight;$/;"	m	class:VVNeuron
+vvbiased	syntactic.h	/^		double vvbiased(int index)$/;"	f	class:VVLayer
+vvget_perceptron	syntactic.h	/^		double vvget_perceptron(int index)$/;"	f	class:VVLayer
+vvget_perceptron_accumulator	syntactic.h	/^		double vvget_perceptron_accumulator(int index)$/;"	f	class:VVLayer
+vvlayer_bias_perceprton	syntactic.h	/^		void vvlayer_bias_perceprton(int index,double val)$/;"	f	class:VVLayer
+vvlayer_number_neuron	syntactic.h	/^		long int vvlayer_number_neuron()$/;"	f	class:VVLayer
+vvlayerinit	syntactic.h	/^		void vvlayerinit(long int a)$/;"	f	class:VVLayer
+vvneuronnumbers	syntactic.h	/^		long int vvneuronnumbers;$/;"	m	class:VVLayer
+vvset_perceptron	syntactic.h	/^		void vvset_perceptron(int index,double val)$/;"	f	class:VVLayer
+vvset_perceptron_accumulator	syntactic.h	/^		void vvset_perceptron_accumulator(int index,double S)$/;"	f	class:VVLayer
+vvstate	syntactic.h	/^	double vvstate;$/;"	m	class:VVNeuron
+vvtransfer_function	syntactic.h	/^		double(*vvtransfer_function)(double);$/;"	m	class:VVNetwork
+vvtransfer_function_derivative	syntactic.h	/^		double(*vvtransfer_function_derivative)(double);$/;"	m	class:VVNetwork
+vvtransfer_function_hardlimiter	transfer_functions.cc	/^double vvtransfer_function_hardlimiter(double x)$/;"	f
+vvtransfer_function_hardlimiter_derivative	transfer_functions.cc	/^double vvtransfer_function_hardlimiter_derivative(double x)$/;"	f
+vvtransfer_function_ramp	transfer_functions.cc	/^double vvtransfer_function_ramp(double x)$/;"	f
+vvtransfer_function_ramp_derivative	transfer_functions.cc	/^double vvtransfer_function_ramp_derivative(double x)$/;"	f
+vvtransfer_function_sigmoid_full	transfer_functions.cc	/^double vvtransfer_function_sigmoid_full(double x)$/;"	f
+vvtransfer_function_sigmoid_full_derivative	transfer_functions.cc	/^double vvtransfer_function_sigmoid_full_derivative(double x)$/;"	f
+vvtransfer_function_sigmoid_half	transfer_functions.cc	/^double vvtransfer_function_sigmoid_half(double x)$/;"	f
+vvtransfer_function_sigmoid_half_derivative	transfer_functions.cc	/^double vvtransfer_function_sigmoid_half_derivative(double x)$/;"	f
+vvtransfer_function_tanh	transfer_functions.cc	/^double vvtransfer_function_tanh(double x)$/;"	f
+vvtransfer_function_tanh_derivative	transfer_functions.cc	/^double vvtransfer_function_tanh_derivative(double x)$/;"	f
+weights	syntactic.h	/^		double *** weights;$/;"	m	class:VVNetwork
+weights	syntactic.h	/^		double *** weights;$/;"	m	class:VVTSNetwork
+xerox_weights	syntactic.h	/^		double ***xerox_weights;$/;"	m	class:VVNetwork
+xerox_weights	syntactic.h	/^		double ***xerox_weights;$/;"	m	class:VVTSNetwork
+~VVNetwork	syntactic.h	/^		~VVNetwork()$/;"	f	class:VVNetwork
+~randoom	randoom.h	/^~randoom()$/;"	f	class:randoom

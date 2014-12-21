@@ -1,0 +1,10 @@
+The documentation is split into 2 parts:
+	
+	User's documentation:
+
+		This is for the general purpose usage of libsyntactic.
+
+	Developer's documentation:
+
+		This is for futher development and understanding of the internal
+	working of libsyntactic.
